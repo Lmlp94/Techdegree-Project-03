@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>THE CODE REVIEW</title>
+  </head>
+
+
+  <body>
+    <header>
+      <h1 id="background">THE CODE REVIEW</h1>
+      <h1><strong>Sign up for our newsletter</strong></h1>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+    </header>
+
+    <main>
+      <form action="index.html" method="post">
+        <fieldset>
+          <legend><strong>Contact Information</strong></legend>
+
+          <div class="flex">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Required" required>
+          </div>
+
+          <div class="flex">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user_email" placeholder="Required" required>
+          </div>
+          
+          <div class="flex">
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="user_number" placeholder="e.g. 3456335673">
+          </div>
+
+          <div class="flex">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address" placeholder="e.g. 11 Pork Island">
+          </div>
+
+          <div class="flex">
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city" placeholder="e.g. Chicago">
+          </div>
+      
+          <div class="flex">
+            <label for="state">State</label>
+            <select id="state" name="user_state">
+              <option value="" disabled selected hidden>Choose State</option>
+              <option value="new york">New York</option>
+              <option value="california">California</option>
+              <option value="texas">Texas</option>
+              <option value="nevada">Nevada</option>
+              <option value="florida">Florida</option>
+              <option value="north carolina">North Carolina</option>
+              <option value="south carolina">South Carolina</option>
+            </select>
+          </div>
+         
+          <div class="flex">
+            <label for="zipcode">Zip Code</label>
+            <input class="zipcode" type="text" id="zipcode" name="user_zipcode" placeholder="e.g. 45995">
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+          <legend><strong>Newsletter</strong></legend>
+          <p>Select the newsletter you would like to receive</p>
+        
+          <div class="flex"> 
+            <input type="checkbox" id="html-news" value="html" name="newsletter"> 
+            <label for="html-news">HTML News</label>
+          </div>
+        
+          <div class="flex">
+            <input type="checkbox" id="css" value="css" name="newsletter">
+            <label for="css">CSS News</label>
+          </div>
+          
+
+          <div class="flex">
+            <input type="checkbox" id="javascript" value="javascript" name="newsletter">
+            <label for="javascript">Javascript News</label>
+          </div>
+          
+
+          <p>Newsletter format</p> 
+         
+          <div class="flex">
+            <input type="radio" id="html" value="user_html" name="newsletter_format">
+            <label for="html">HTML</label>
+          </div>
+          
+
+          <div class="flex">
+            <input type="radio" id="text" value="user_text" name="newsletter_format">
+            <label for="text">Plain text</label>
+          </div>
+          
+          <div class="flex text">
+            <label for="topics">Other topics you'd like to hear about</label><br>
+            <textarea class="textarea" id="topics" name="topics_interest" placeholder="Write here.." ></textarea>
+          </div>
+        
+
+          <button class="button" type="submit">Sign Up</button>
+        </fieldset>
+      </form>
+    </main>
+ 
+  <footer>
+    <span>Copyright The Code Review</span>
+  </footer>
+  </body>
+
+</html>
